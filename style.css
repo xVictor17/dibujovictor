@@ -1,0 +1,346 @@
+/* Declaring custom properties */
+* {
+  box-sizing: border-box;
+}
+
+#fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  background-color: green;
+  border: thin solid gray;
+
+  z-index: -3;
+}
+
+
+
+
+.muneco {
+  /* centramos verticalmente la patata */
+  position: relative;
+
+  margin: 0 auto;
+  /* fin centrar verticalmente la patata */
+  border: thin solid green;
+
+  height: 30em;
+  width: 30em;
+  top: 500px;
+
+}
+
+.cuerpo {
+  position: absolute;
+  height: 380px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: yellow;
+  border: thin solid black;
+}
+
+.ojo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: thin solid  #873e23;
+  border-radius: 50%;
+
+}
+
+.pupila {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  background-color: #99ffd9;
+  border: thin solid black;
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+}
+
+@keyframes mover-ojo-right {
+  o% {right: 5em;}
+  40% {right: 7em;}
+  55% {right: 9em;}
+}
+
+.ojo-lt {
+  position: absolute;
+  left: 50px;
+  top: 40px;
+
+}
+
+
+@keyframes mover-ojo-right {
+  o% {left: 5em;}
+  40% {left: 7em;}
+  55% {left: 9em;}
+}
+
+.ojo-rt {
+  position: absolute;
+  right: 50px;
+  top: 40px;
+  animation: mover_ojo_izquierdo
+}
+
+
+
+.nariz {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: thin solid red;
+
+ /* centrar la nariz*/
+  margin: 0 auto;
+
+  left: 3em;
+
+}
+
+
+.ropa {
+  position: absolute;
+  height: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  bottom: 0;
+  background-color: #873e23;
+  border: thin solid black;
+
+  z-index: -1;
+
+  border-top: 2em solid black;
+  border-style: dashed;
+}
+
+
+.piernas {
+position: absolute;
+height: 200px;
+left: 0px;
+right: 0px;
+
+}
+
+
+.pierna {
+  position: absolute;
+  height: 300px;
+  width: 70px;
+  left: 40px;
+  margin: 0 auto;
+  background-color: yellow;
+  top: 480px;
+}
+
+
+.piernaizquierda {
+  position: absolute;
+  height: 300px;
+  width: 70px;
+  left: 305px;
+  background-color: yellow;
+  top: 475px;
+}
+
+.piernaderecha {
+  position: absolute;
+  height: 300px;
+  width: 70px;
+  right: 305px;
+  background-color: yellow;
+  top: 475px;
+}
+
+
+
+.calcetinizquierdo {
+  position: absolute;
+  height: 310px;
+  width: 72px;
+  right: 305px;
+  background-color: white;
+  top: 580px;
+  z-index: 10;
+  border-top:10px solid blue;
+}
+
+
+.calcetinderecha {
+position: absolute;
+height: 320px;
+width: 76px;
+left: 199px;
+background-color: white;
+top: 100px;
+border-top:10px solid blue;
+border-top: 10px solid red;
+z-index: 20;
+}
+
+
+
+
+.pie1 {
+  position: absolute;
+  height: 90px;
+  width: 190px;
+  left: 0px;
+  background-color: black;
+  top: 230px;
+  z-index: 30
+}
+
+
+.pie2 {
+  position: absolute;
+  height: 90px;
+  width: 180px;
+  right:100px;
+  background-color: black;
+  top: 230px;
+  z-index: 30
+
+}
+
+.brazoderecho{
+  position: absolute;
+  height: 60px;
+  width: 300px;
+  right: 478px;
+  background-color: yellow;
+  top: 350px;
+  border-top-left-radius: 700px;
+  border-top-right-radius: 700px;
+  border-bottom-right-radius: 700px;
+  border-bottom-left-radius: 700px;
+  transform:rotate(0deg);
+}
+
+.manga2{
+  position: absolute;
+  height: 80px;
+  width: 100px;
+  right: 203px;
+  background-color: white;
+  top: 0px;
+  z-index: 30
+}
+
+
+.brazoizquierdo{
+  position: absolute;
+  height: 60px;
+  width: 300px;
+  left: 478px;
+  background-color: yellow;
+  top: 350px;
+  border-top-left-radius: 700px;
+  border-top-right-radius: 700px;
+  border-bottom-right-radius: 700px;
+  border-bottom-left-radius: 700px;
+  transform:rotate(0deg);
+}
+
+.manga {
+  position: absolute;
+  height: 80px;
+  width: 100px;
+  left: 200px;
+  background-color: white;
+  top: 0px;
+  z-index: 30
+}
+
+
+
+.boca {
+  position: absolute;
+  height: 1px;
+  width:190px;
+  left: 130px;
+  background-color: black;
+  top: 250px;
+  z-index: 10;
+}
+
+
+
+.diente1 {
+position: absolute;
+height: 60px;
+width: 40px;
+left: 120px;
+background-color: white;
+top: 3px;
+}
+
+
+
+.dinente2 {
+  position: absolute;
+  height: 60px;
+  width: 40px;
+  left: 10px;
+  background-color: white;
+  top: 3px;
+
+}
+
+
+.corbata {
+  position: absolute;
+  height: 80px;
+  width: 40px;
+  left: 210px;
+  background-color: red;
+top:-25px;
+
+}
+
+
+.gorro {
+  position: absolute;
+  height: 200px;
+  width: 120px;
+  left: 1800px;
+  background-color: white;
+  top:300px;
+
+}
+
+
+.partebaja {
+  position: absolute;
+  height: 50px;
+  width: 120px;
+  background-color: black;
+top:150px;
+}
+
+
+.foto {
+  position: absolute;
+  height: 150px;
+  width: 100px;
+  background-color: black;
+top:-150px;
+z-index: 20
+}
